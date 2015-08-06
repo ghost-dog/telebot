@@ -14,7 +14,7 @@ from google.appengine.api import urlfetch
 from google.appengine.ext import ndb
 import webapp2
 
-TOKEN = 'YOUR_BOT_TOKEN_HERE'
+TOKEN = '117428454:AAGa_AhbDtqHmwFYzuGtPiQ4LzPKGKXOjMA'
 
 BASE_URL = 'https://api.telegram.org/bot' + TOKEN + '/'
 
@@ -126,9 +126,10 @@ class WebhookHandler(webapp2.RequestHandler):
         # CUSTOMIZE FROM HERE
 
         elif 'who are you' in text:
-            reply('telebot starter kit, created by yukuku: https://github.com/yukuku/telebot')
+#            reply('telebot starter kit, created by yukuku: https://github.com/yukuku/telebot')
+            reply('telebot by Sergey Malkov')
         elif 'what time' in text:
-            reply('look at the top-right corner of your screen!')
+            reply('Look bootom-right corner of your monitor!')
         else:
             if getEnabled(chat_id):
                 try:
